@@ -1,0 +1,63 @@
+========================================
+VIRTUAL MEMORY MANAGEMENT SIMULATOR
+========================================
+Enter page size in KB: Enter number of memory frames: Enter number of logical addresses: Enter 12 logical addresses separated by spaces:
+
+Address to page conversion
+--------------------------
+Address  28672 -> Page 7
+Address      0 -> Page 0
+Address   4096 -> Page 1
+Address   8192 -> Page 2
+Address      0 -> Page 0
+Address  12288 -> Page 3
+Address      0 -> Page 0
+Address  16384 -> Page 4
+Address   8192 -> Page 2
+Address  12288 -> Page 3
+Address      0 -> Page 0
+Address  12288 -> Page 3
+
+========================================
+FIFO PAGE REPLACEMENT
+========================================
+Page  7 -> Fault [ 7 - - ]
+Page  0 -> Fault [ 7 0 - ]
+Page  1 -> Fault [ 7 0 1 ]
+Page  2 -> Fault [ 2 0 1 ]
+Page  0 -> Hit   [ 2 0 1 ]
+Page  3 -> Fault [ 2 3 1 ]
+Page  0 -> Fault [ 2 3 0 ]
+Page  4 -> Fault [ 4 3 0 ]
+Page  2 -> Fault [ 4 2 0 ]
+Page  3 -> Fault [ 4 2 3 ]
+Page  0 -> Fault [ 0 2 3 ]
+Page  3 -> Hit   [ 0 2 3 ]
+
+Total references : 12
+Page hits        : 2
+Page faults      : 10
+Hit ratio        : 16.67%
+Miss ratio       : 83.33%
+
+========================================
+LRU PAGE REPLACEMENT
+========================================
+Page  7 -> Fault [ 7 - - ]
+Page  0 -> Fault [ 7 0 - ]
+Page  1 -> Fault [ 7 0 1 ]
+Page  2 -> Fault [ 2 0 1 ]
+Page  0 -> Hit   [ 2 0 1 ]
+Page  3 -> Fault [ 2 0 3 ]
+Page  0 -> Hit   [ 2 0 3 ]
+Page  4 -> Fault [ 4 0 3 ]
+Page  2 -> Fault [ 4 0 2 ]
+Page  3 -> Fault [ 4 3 2 ]
+Page  0 -> Fault [ 0 3 2 ]
+Page  3 -> Hit   [ 0 3 2 ]
+
+Total references : 12
+Page hits        : 3
+Page faults      : 9
+Hit ratio        : 25.00%
+Miss ratio       : 75.00%

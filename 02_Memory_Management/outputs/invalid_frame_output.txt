@@ -1,0 +1,4 @@
+========================================
+VIRTUAL MEMORY MANAGEMENT SIMULATOR
+========================================
+Enter page size in KB: Enter number of memory frames: Error: Frame count must be between 1 and 20.

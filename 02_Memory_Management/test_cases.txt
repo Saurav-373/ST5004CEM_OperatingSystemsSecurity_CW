@@ -1,0 +1,42 @@
+TEST CASE 1: Normal input
+
+Page size:
+4 KB
+
+Frames:
+3
+
+Logical addresses:
+28672 0 4096 8192 0 12288 0 16384 8192 12288 0 12288
+
+Expected page numbers:
+7 0 1 2 0 3 0 4 2 3 0 3
+
+Expected FIFO result:
+Hits: 2
+Faults: 10
+
+Expected LRU result:
+Hits: 3
+Faults: 9
+
+
+TEST CASE 2: Invalid frame count
+
+Input:
+Page size = 4
+Frame count = 0
+
+Expected result:
+Program rejects the frame count.
+
+
+TEST CASE 3: Negative logical address
+
+Input:
+Page size = 4
+Frame count = 3
+References = 0 -10 4096
+
+Expected result:
+Program rejects the negative address.

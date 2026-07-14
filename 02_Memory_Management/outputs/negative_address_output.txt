@@ -1,0 +1,5 @@
+========================================
+VIRTUAL MEMORY MANAGEMENT SIMULATOR
+========================================
+Enter page size in KB: Enter number of memory frames: Enter number of logical addresses: Enter 3 logical addresses separated by spaces:
+Error: Logical addresses cannot be negative.
