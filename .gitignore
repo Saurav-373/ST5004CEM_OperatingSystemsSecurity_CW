@@ -2,3 +2,6 @@
 *.o
 01_Process_Management_Threading/task1_simulator
 03_File_System_Security/secure_file_manager
+03_File_System_Security/audit.log
+03_File_System_Security/file_metadata.txt
+03_File_System_Security/secure_storage/
