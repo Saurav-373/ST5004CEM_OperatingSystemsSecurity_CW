@@ -1,0 +1,82 @@
+TASK 1 TEST CASES
+=================
+
+T1-01: Minimum three threads
+Purpose:
+Confirm that three POSIX worker threads are created and terminated.
+
+Expected result:
+All three threads complete their work and the final job count is 9.
+
+Actual result:
+Three worker threads completed a total of 9 jobs.
+
+Status:
+PASS
+
+
+T1-02: Shared resource under load
+Purpose:
+Confirm that the completedJobs shared variable is protected correctly.
+
+Expected result:
+No updates are lost and the final result remains 9.
+
+Actual result:
+Expected completed jobs: 9
+Actual completed jobs: 9
+
+Status:
+PASS
+
+
+T1-03: Valid round-robin scheduling
+Input:
+Processes: 3
+Burst times: 5, 4, 2
+Time quantum: 2
+
+Expected result:
+Processes execute cyclically until all remaining times reach zero.
+
+Actual result:
+P1 completion: 11, waiting: 6, turnaround: 11
+P2 completion: 10, waiting: 6, turnaround: 10
+P3 completion: 6, waiting: 4, turnaround: 6
+Average waiting time: 5.33
+Average turnaround time: 9.00
+
+Status:
+PASS
+
+
+T1-04: Invalid time quantum
+Input:
+Processes: 3
+Burst times: 5, 4, 2
+Time quantum: 0
+
+Expected result:
+The invalid time quantum is rejected safely.
+
+Actual result:
+Error: The value must be greater than zero.
+
+Status:
+PASS
+
+
+T1-05: Repeated stability test
+Purpose:
+Run the application three times to check for deadlock, hanging or
+incorrect shared-resource results.
+
+Expected result:
+Every execution terminates successfully and produces 9 completed jobs.
+
+Actual result:
+All three executions terminated successfully.
+Each execution produced 9 completed jobs.
+
+Status:
+PASS
