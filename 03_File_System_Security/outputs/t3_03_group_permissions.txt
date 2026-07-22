@@ -1,0 +1,84 @@
+========================================
+SECURE FILE MANAGEMENT SYSTEM
+========================================
+
+Login attempt 1 of 3
+Username: Password: Login successful. Welcome, ankit.
+
+========================================
+Logged in as: ankit (students)
+========================================
+1. Create file
+2. Read file
+3. Write to file
+4. Delete file
+5. Change permissions
+6. Check execute permission
+7. Encrypt file
+8. Decrypt file
+9. View audit log (administrator only)
+0. Exit
+Choose an option: Enter the filename to read: 
+----- File contents -----
+Operating systems coursework test.
+-------------------------
+
+========================================
+Logged in as: ankit (students)
+========================================
+1. Create file
+2. Read file
+3. Write to file
+4. Delete file
+5. Change permissions
+6. Check execute permission
+7. Encrypt file
+8. Decrypt file
+9. View audit log (administrator only)
+0. Exit
+Choose an option: Enter the filename to write to: Access denied: Write permission is required.
+
+========================================
+Logged in as: ankit (students)
+========================================
+1. Create file
+2. Read file
+3. Write to file
+4. Delete file
+5. Change permissions
+6. Check execute permission
+7. Encrypt file
+8. Decrypt file
+9. View audit log (administrator only)
+0. Exit
+Choose an option: Please choose a valid menu option.
+
+========================================
+Logged in as: ankit (students)
+========================================
+1. Create file
+2. Read file
+3. Write to file
+4. Delete file
+5. Change permissions
+6. Check execute permission
+7. Encrypt file
+8. Decrypt file
+9. View audit log (administrator only)
+0. Exit
+Choose an option: Enter the filename to delete: Access denied: Only the owner or administrator can delete this file.
+
+========================================
+Logged in as: ankit (students)
+========================================
+1. Create file
+2. Read file
+3. Write to file
+4. Delete file
+5. Change permissions
+6. Check execute permission
+7. Encrypt file
+8. Decrypt file
+9. View audit log (administrator only)
+0. Exit
+Choose an option: Exiting securely.

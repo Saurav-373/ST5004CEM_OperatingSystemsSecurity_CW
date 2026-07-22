@@ -1,0 +1,75 @@
+========================================
+SECURE FILE MANAGEMENT SYSTEM
+========================================
+
+Login attempt 1 of 3
+Username: Password: Login successful. Welcome, admin.
+
+========================================
+Logged in as: admin (admins)
+========================================
+1. Create file
+2. Read file
+3. Write to file
+4. Delete file
+5. Change permissions
+6. Check execute permission
+7. Encrypt file
+8. Decrypt file
+9. View audit log (administrator only)
+0. Exit
+Choose an option: 
+=============== AUDIT LOG ===============
+[2026-07-22 22:04:22] user=saurav action=LOGIN file=- result=SUCCESS
+[2026-07-22 22:04:40] user=saurav action=CREATE file=notes.txt result=SUCCESS
+[2026-07-22 22:05:05] user=saurav action=WRITE file=notes.txt result=SUCCESS
+[2026-07-22 22:05:18] user=saurav action=READ file=notes.txt result=SUCCESS
+[2026-07-22 22:06:04] user=saurav action=CHMOD file=notes.txt result=SUCCESS
+[2026-07-22 22:06:23] user=saurav action=EXECUTE_CHECK file=notes.txt result=ALLOWED
+[2026-07-22 22:06:42] user=saurav action=ENCRYPT file=notes.txt result=SUCCESS
+[2026-07-22 22:06:58] user=saurav action=DECRYPT file=notes.txt result=SUCCESS
+[2026-07-22 22:07:10] user=saurav action=READ file=notes.txt result=SUCCESS
+[2026-07-22 22:07:20] user=saurav action=LOGOUT file=- result=SUCCESS
+[2026-07-22 22:13:05] user=saurav action=LOGIN file=- result=SUCCESS
+[2026-07-22 22:13:05] user=saurav action=CREATE file=authorized_test.txt result=SUCCESS
+[2026-07-22 22:13:05] user=saurav action=WRITE file=authorized_test.txt result=SUCCESS
+[2026-07-22 22:13:05] user=saurav action=READ file=authorized_test.txt result=SUCCESS
+[2026-07-22 22:13:05] user=saurav action=DELETE file=authorized_test.txt result=SUCCESS
+[2026-07-22 22:13:05] user=saurav action=LOGOUT file=- result=SUCCESS
+[2026-07-22 22:13:22] user=ankit action=LOGIN file=- result=SUCCESS
+[2026-07-22 22:13:22] user=ankit action=READ file=notes.txt result=SUCCESS
+[2026-07-22 22:13:22] user=ankit action=WRITE file=notes.txt result=DENIED
+[2026-07-22 22:13:22] user=ankit action=DELETE file=notes.txt result=DENIED
+[2026-07-22 22:13:22] user=ankit action=LOGOUT file=- result=SUCCESS
+[2026-07-22 22:13:51] user=guest action=LOGIN file=- result=SUCCESS
+[2026-07-22 22:13:51] user=guest action=READ file=notes.txt result=DENIED
+[2026-07-22 22:13:51] user=guest action=WRITE file=notes.txt result=DENIED
+[2026-07-22 22:13:51] user=guest action=LOGOUT file=- result=SUCCESS
+[2026-07-22 22:14:13] user=saurav action=LOGIN file=- result=SUCCESS
+[2026-07-22 22:14:13] user=saurav action=CREATE file=crypto_test.txt result=SUCCESS
+[2026-07-22 22:14:13] user=saurav action=WRITE file=crypto_test.txt result=SUCCESS
+[2026-07-22 22:14:13] user=saurav action=ENCRYPT file=crypto_test.txt result=SUCCESS
+[2026-07-22 22:14:13] user=saurav action=DECRYPT file=crypto_test.txt result=SUCCESS
+[2026-07-22 22:14:13] user=saurav action=READ file=crypto_test.txt result=SUCCESS
+[2026-07-22 22:14:13] user=saurav action=DELETE file=crypto_test.txt result=SUCCESS
+[2026-07-22 22:14:13] user=saurav action=LOGOUT file=- result=SUCCESS
+[2026-07-22 22:14:25] user=saurav action=LOGIN file=- result=SUCCESS
+[2026-07-22 22:14:25] user=saurav action=CREATE file=../secret.txt result=INVALID_NAME
+[2026-07-22 22:14:25] user=saurav action=LOGOUT file=- result=SUCCESS
+[2026-07-22 22:14:34] user=admin action=LOGIN file=- result=SUCCESS
+=========================================
+
+========================================
+Logged in as: admin (admins)
+========================================
+1. Create file
+2. Read file
+3. Write to file
+4. Delete file
+5. Change permissions
+6. Check execute permission
+7. Encrypt file
+8. Decrypt file
+9. View audit log (administrator only)
+0. Exit
+Choose an option: Exiting securely.

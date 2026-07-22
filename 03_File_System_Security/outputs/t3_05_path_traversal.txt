@@ -1,0 +1,36 @@
+========================================
+SECURE FILE MANAGEMENT SYSTEM
+========================================
+
+Login attempt 1 of 3
+Username: Password: Login successful. Welcome, saurav.
+
+========================================
+Logged in as: saurav (students)
+========================================
+1. Create file
+2. Read file
+3. Write to file
+4. Delete file
+5. Change permissions
+6. Check execute permission
+7. Encrypt file
+8. Decrypt file
+9. View audit log (administrator only)
+0. Exit
+Choose an option: Enter a new filename: Invalid filename. Do not use paths or special characters.
+
+========================================
+Logged in as: saurav (students)
+========================================
+1. Create file
+2. Read file
+3. Write to file
+4. Delete file
+5. Change permissions
+6. Check execute permission
+7. Encrypt file
+8. Decrypt file
+9. View audit log (administrator only)
+0. Exit
+Choose an option: Exiting securely.

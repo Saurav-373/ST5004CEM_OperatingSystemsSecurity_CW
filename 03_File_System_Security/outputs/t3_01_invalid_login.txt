@@ -1,0 +1,13 @@
+========================================
+SECURE FILE MANAGEMENT SYSTEM
+========================================
+
+Login attempt 1 of 3
+Username: Password: Invalid username or password.
+
+Login attempt 2 of 3
+Username: Password: Invalid username or password.
+
+Login attempt 3 of 3
+Username: Password: Invalid username or password.
+Too many failed login attempts.
