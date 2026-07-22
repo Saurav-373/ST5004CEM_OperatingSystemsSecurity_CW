@@ -1,0 +1,26 @@
+========================================
+PROCESS MANAGEMENT AND THREADING
+========================================
+
+========================================
+THREAD AND SYNCHRONIZATION SIMULATION
+========================================
+Worker 3 completed job 1. Total completed jobs: 1
+Worker 3 completed job 2. Total completed jobs: 2
+Worker 3 completed job 3. Total completed jobs: 3
+Worker 1 completed job 1. Total completed jobs: 4
+Worker 1 completed job 2. Total completed jobs: 5
+Worker 1 completed job 3. Total completed jobs: 6
+Worker 2 completed job 1. Total completed jobs: 7
+Worker 2 completed job 2. Total completed jobs: 8
+Worker 2 completed job 3. Total completed jobs: 9
+
+Thread simulation completed.
+Expected completed jobs: 9
+Actual completed jobs  : 9
+Shared data was updated correctly.
+
+========================================
+ROUND-ROBIN SCHEDULING SIMULATION
+========================================
+Enter number of processes: Enter burst time for process P1: Enter burst time for process P2: Enter burst time for process P3: Enter the time quantum: Error: The value must be greater than zero.

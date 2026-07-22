@@ -1,0 +1,48 @@
+========================================
+PROCESS MANAGEMENT AND THREADING
+========================================
+
+========================================
+THREAD AND SYNCHRONIZATION SIMULATION
+========================================
+Worker 1 completed job 1. Total completed jobs: 1
+Worker 1 completed job 2. Total completed jobs: 2
+Worker 1 completed job 3. Total completed jobs: 3
+Worker 2 completed job 1. Total completed jobs: 4
+Worker 2 completed job 2. Total completed jobs: 5
+Worker 2 completed job 3. Total completed jobs: 6
+Worker 3 completed job 1. Total completed jobs: 7
+Worker 3 completed job 2. Total completed jobs: 8
+Worker 3 completed job 3. Total completed jobs: 9
+
+Thread simulation completed.
+Expected completed jobs: 9
+Actual completed jobs  : 9
+Shared data was updated correctly.
+
+========================================
+ROUND-ROBIN SCHEDULING SIMULATION
+========================================
+Enter number of processes: Enter burst time for process P1: Enter burst time for process P2: Enter burst time for process P3: Enter the time quantum: 
+Execution order
+----------------
+Time 0 to 2: P1 runs for 2 unit(s)
+Time 2 to 4: P2 runs for 2 unit(s)
+Time 4 to 6: P3 runs for 2 unit(s)
+P3 completed at time 6
+Time 6 to 8: P1 runs for 2 unit(s)
+Time 8 to 10: P2 runs for 2 unit(s)
+P2 completed at time 10
+Time 10 to 11: P1 runs for 1 unit(s)
+P1 completed at time 11
+
+============================================================
+ROUND-ROBIN RESULTS
+============================================================
+PID      Burst      Completion   Waiting      Turnaround  
+1        5          11           6            11          
+2        4          10           6            10          
+3        2          6            4            6           
+
+Average waiting time    : 5.33
+Average turnaround time : 9.00
