@@ -1,0 +1,103 @@
+TASK 3 TEST CASES
+=================
+
+T3-01: Valid and invalid authentication
+
+Purpose:
+Confirm that valid credentials are accepted and repeated invalid credentials are rejected.
+
+Expected result:
+A valid user can log in. Three invalid attempts end the program safely.
+
+Actual result:
+Valid credentials were accepted.
+Three invalid attempts produced:
+"Too many failed login attempts."
+
+Status:
+PASS
+
+
+T3-02: Authorized file operations
+
+Purpose:
+Test file creation, writing, reading and deletion by the file owner.
+
+Expected result:
+All authorized operations complete successfully.
+
+Actual result:
+The file was created, written, read and deleted successfully.
+
+Status:
+PASS
+
+
+T3-03: Permission enforcement
+
+Purpose:
+Test owner, group and others access.
+
+Input:
+Owner: saurav
+Group user: ankit
+Other user: guest
+
+Expected result:
+The group user can read but cannot write or delete.
+The guest user cannot read or write.
+
+Actual result:
+Ankit successfully read the file but write and delete operations were denied.
+Guest read and write operations were denied.
+
+Status:
+PASS
+
+
+T3-04: Encryption and decryption
+
+Purpose:
+Confirm that a file can be encrypted and restored using the same XOR key.
+
+Expected result:
+The decrypted content matches the original content.
+
+Actual result:
+The file was encrypted and decrypted successfully.
+The original sentence was restored correctly.
+
+Status:
+PASS
+
+
+T3-05: Invalid filename and path traversal
+
+Input:
+../secret.txt
+
+Expected result:
+The filename is rejected before a file is created outside secure_storage.
+
+Actual result:
+The program displayed:
+"Invalid filename. Do not use paths or special characters."
+
+Status:
+PASS
+
+
+T3-06: Audit-log inspection
+
+Purpose:
+Confirm that successful, denied and invalid operations are recorded.
+
+Expected result:
+The administrator can view timestamped audit records.
+
+Actual result:
+The audit log contained usernames, actions, filenames and results including
+SUCCESS, DENIED and INVALID_NAME.
+
+Status:
+PASS
