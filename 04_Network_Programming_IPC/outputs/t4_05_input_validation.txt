@@ -1,0 +1,4 @@
+Server: INFO Connected to the Task 4 server. Type HELP for commands.
+Empty input: ERROR Empty command
+Oversized input: ERROR Message too long
+Safe exit: BYE Connection closed

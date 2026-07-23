@@ -1,0 +1,13 @@
+========================================
+TASK 4 TCP CLIENT
+========================================
+Connected to 127.0.0.1:8080
+
+Server: INFO Connected to the Task 4 server. Type HELP for commands.
+
+Command: Server: ERROR Usage: LOGIN <username> <password>
+
+Command: Server: ERROR Unknown command. Type HELP.
+
+Command: Server: BYE Connection closed
+Client closed safely.

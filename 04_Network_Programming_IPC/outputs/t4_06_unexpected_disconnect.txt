@@ -1,0 +1,23 @@
+========== UNEXPECTED DISCONNECTION TEST ==========
+Server: INFO Connected to the Task 4 server. Type HELP for commands.
+Login: OK LOGIN successful
+Closing client socket without sending QUIT...
+Unexpected disconnection completed.
+
+========== SERVER CONTINUATION TEST ==========
+========================================
+TASK 4 TCP CLIENT
+========================================
+Connected to 127.0.0.1:8080
+
+Server: INFO Connected to the Task 4 server. Type HELP for commands.
+
+Command: Server: OK LOGIN successful
+
+Command: Server: INFO user=guest authenticated=yes active_clients=1
+
+Command: Server: BYE Connection closed
+Client closed safely.
+
+========== SERVER LOG EVIDENCE ==========
+[2026-07-23 13:21:15] client=127.0.0.1 user=saurav action=DISCONNECT result=UNEXPECTED

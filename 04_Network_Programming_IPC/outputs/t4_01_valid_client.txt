@@ -1,0 +1,19 @@
+========================================
+TASK 4 TCP CLIENT
+========================================
+Connected to 127.0.0.1:8080
+
+Server: INFO Connected to the Task 4 server. Type HELP for commands.
+
+Command: Server: INFO Commands: LOGIN <user> <password>, MSG <text>, STATUS, TIME, HELP, QUIT
+
+Command: Server: OK LOGIN successful
+
+Command: Server: OK MESSAGE received
+
+Command: Server: INFO user=saurav authenticated=yes active_clients=1
+
+Command: Server: INFO Server time: 2026-07-23 13:16:21
+
+Command: Server: BYE Connection closed
+Client closed safely.
