@@ -1,0 +1,30 @@
+============================================================
+TASK 3 - SECURITY TEST EVIDENCE
+============================================================
+
+1. AUTHENTICATION
+Too many failed login attempts.
+Username: Password: Login successful. Welcome, saurav.
+
+2. AUTHORIZED FILE OPERATIONS
+Choose an option: Enter a new filename: File created with permissions rw-r-----.
+Choose an option: Enter the filename to write to: Enter text to append: Text added successfully.
+Authorized file operation test.
+Choose an option: Enter the filename to delete: File deleted successfully.
+
+3. PERMISSION ENFORCEMENT
+Choose an option: Enter the filename to write to: Access denied: Write permission is required.
+Choose an option: Enter the filename to delete: Access denied: Only the owner or administrator can delete this file.
+Choose an option: Enter the filename to read: Access denied: Read permission is required.
+Choose an option: Enter the filename to write to: Access denied: Write permission is required.
+
+4. ENCRYPTION AND FILENAME VALIDATION
+Choose an option: Enter the filename: Enter a one-character key: File encrypted successfully.
+Choose an option: Enter the filename: Enter a one-character key: File decrypted successfully.
+Original encryption test content.
+Choose an option: Enter a new filename: Invalid filename. Do not use paths or special characters.
+
+5. AUDIT LOG
+[2026-07-22 22:14:34] user=admin action=LOGIN file=- result=SUCCESS
+[2026-07-22 22:13:51] user=guest action=WRITE file=notes.txt result=DENIED
+[2026-07-22 22:14:25] user=saurav action=CREATE file=../secret.txt result=INVALID_NAME
