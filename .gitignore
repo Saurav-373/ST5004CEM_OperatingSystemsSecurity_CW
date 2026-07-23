@@ -5,3 +5,6 @@
 03_File_System_Security/audit.log
 03_File_System_Security/file_metadata.txt
 03_File_System_Security/secure_storage/
+04_Network_Programming_IPC/server
+04_Network_Programming_IPC/client
+04_Network_Programming_IPC/server.log
